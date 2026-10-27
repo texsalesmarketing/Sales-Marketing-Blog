@@ -1,8 +1,8 @@
-# TEX Marketing Hub V7
+# TEX Marketing Hub
 
 GitHub Pages-ready static website.
 
-## V7 updates
+## updates
 - Keeps the overlapping/open-magazine design.
 - Marketing message and newsletter thumbnail are separately clickable.
 - Each page opens its own full-resolution image in the same fullscreen viewer.
