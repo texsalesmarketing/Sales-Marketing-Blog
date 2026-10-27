@@ -1,0 +1,71 @@
+/* Vol.02 · A midnight dispatch. Vol.01 retains its own original design. */
+:root{--spooky:'Creepster',Impact,Georgia,serif;--gothic:'Cinzel Decorative',Georgia,serif}
+body[data-issue="02"]{--bg:#0b0610;--text:#fff0d8;--muted:#bdaec5;--accent:#ff8a3d;--accent-rgb:255,138,61;--line:#af6d643f;--surface:#160d1d;--header:#0c0710ec;--panel-top:#221123;--panel-bottom:#100a13;--reader:#0b0610;--reader-center:#30152f;--sans:Inter,'Noto Sans Thai','Segoe UI',sans-serif}
+.issue-switcher{position:relative;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:16px}
+.switcher-label{font-size:9px;letter-spacing:.18em;color:var(--muted)}.switcher-label>span{padding:0 10px;color:var(--accent)}.issue-switcher .volume-picker{margin:0}.issue-switcher .volume-tab{min-width:113px;padding:7px 13px}
+.halloween-hero,.halloween-divider,.reading-heading{display:none}
+body[data-issue="02"] .halloween-hero{display:block;position:relative;isolation:isolate;min-height:670px;overflow:hidden;border-block:1px solid #9b5b8530}
+body[data-issue="02"] .site:before{background:radial-gradient(ellipse at 75% 48%,#4b15391f,transparent 55%)}
+body[data-issue="02"] .site:after{display:none}
+body[data-issue="02"] .header{background:#0b0610;border-color:#aa658b22}
+body[data-issue="02"] .brand-copy strong{font-family:var(--gothic);font-size:17px}
+body[data-issue="02"] .contact-btn{border-color:#a35d3c;border-radius:40px;box-shadow:0 0 20px #e15b1718}
+body[data-issue="02"] .season-decoration{display:none}
+.night-art,.night-vignette,.night-grain,.night-mist{position:absolute;inset:0;pointer-events:none;z-index:-1}
+.night-art{background:url('../images/halloween-night.webp') center 53% / cover no-repeat}
+.night-vignette{background:linear-gradient(90deg,#0b0610f0 0%,#0b0610bd 30%,#0b061020 64%,#0b061000 85%),linear-gradient(0deg,#0b0610 0%,transparent 25%,transparent 85%,#0b061045)}
+.night-grain{opacity:.2;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23ffffff' filter='url(%23n)' opacity='.2' d='M0 0h160v160H0z'/%3E%3C/svg%3E")}
+.night-mist{inset:auto -10% -60px;height:170px;filter:blur(32px);opacity:.3;background:radial-gradient(ellipse at 25% 80%,#713d87,transparent 60%);animation:mist-drift 16s ease-in-out infinite alternate}
+.night-content{padding-top:74px;padding-bottom:110px;position:relative;z-index:1}
+.night-eyebrow{display:flex;align-items:center;gap:12px;font-size:9px;font-weight:500;letter-spacing:.25em;color:#ff9d61;margin:0 0 28px}.night-eyebrow>span{width:25px;height:1px;background:#ff9d61}
+#halloween-title{font-family:var(--spooky);font-weight:400;line-height:.98;margin:0;letter-spacing:.01em;max-width:780px;text-shadow:0 6px 28px #0009}
+.happy-word{display:block;font-family:var(--gothic);font-size:clamp(36px,4.5vw,66px);line-height:1.2;letter-spacing:.035em;font-weight:700;color:#fff0d8;margin-bottom:1px}
+.halloween-word{display:block;font-size:clamp(73px,9.7vw,147px);color:#ff8a3d;text-shadow:0 0 50px #ff661230,2px 7px 0 #4e201d80}
+.night-subtitle{font-family:Georgia,serif;font-size:26px;line-height:1.35;color:#eddfdf;margin:26px 0 12px}
+.night-thai{font-family:'Noto Sans Thai',Tahoma,sans-serif;font-size:15px;line-height:1.8;color:#bdaeC5;margin:0}
+.night-actions{display:flex;align-items:center;gap:22px;margin-top:30px}.night-enter{display:flex;align-items:center;justify-content:center;gap:30px;border:1px solid #ffa468;border-radius:40px;background:linear-gradient(110deg,#ffab5c,#ff7837);color:#27101a;padding:14px 24px;font-size:12px;font-weight:600;box-shadow:0 0 28px #ff66123b;transition:box-shadow .2s,transform .2s}.night-enter:hover{box-shadow:0 0 40px #ff661266;transform:translateY(-2px)}.night-enter span{font-size:18px}.night-edition{display:flex;align-items:center;gap:10px;font-size:8px;letter-spacing:.12em;color:#d4b6c6}.night-edition i{width:3px;height:3px;border-radius:50%;background:#d77e5a}
+.night-bottom{position:absolute;bottom:22px;left:0;right:0;display:flex;align-items:center;justify-content:space-between;gap:18px;font-size:8px;letter-spacing:.22em;color:#ba9aad}.night-bottom>a{display:flex;align-items:center;gap:15px}.night-bottom>a span{font-size:18px;color:#ff9d61}
+body[data-issue="02"] .halloween-divider{display:flex;justify-content:center;gap:35px;align-items:center;padding:20px 16px;border-bottom:1px solid #aa658b22;background:#120a17;font-size:9px;letter-spacing:.18em;color:#c1a4ba}.halloween-divider i{font-style:normal;color:#ff8a3d;font-size:15px}
+body[data-issue="02"] .reading-heading{display:block;text-align:center;padding-top:64px}.reading-heading>p{font-size:9px;letter-spacing:.23em;color:#e08d67;margin:0 0 16px}.reading-heading h2{font:400 42px/1.13 Georgia,serif;letter-spacing:-.035em;margin:0 0 15px}.reading-heading em{font-weight:400;color:#ff9d61}.reading-heading>span{font-size:12px;color:var(--muted)}
+body[data-issue="02"] .hero-copy{display:none}
+body[data-issue="02"] .desktop-frame{display:block;min-height:0}
+body[data-issue="02"] .hero{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);max-width:1030px;gap:70px;padding-block:45px 76px;min-height:0;scroll-margin-top:30px}
+body[data-issue="02"] .cover-area{grid-column:1;grid-row:1;width:100%;padding:0}
+body[data-issue="02"] .single-issue{width:min(100%,440px);aspect-ratio:1448/2048}
+body[data-issue="02"] .single-issue .newsletter-page{transform:rotate(-2deg);border-color:#dba17b66;box-shadow:0 15px 80px #000,0 0 45px #f7761320}
+body[data-issue="02"] .single-issue .newsletter-page:hover{transform:rotate(0deg) translateY(-4px)}
+body[data-issue="02"] .single-issue:before{transform:rotate(3deg);border-color:#85424c70;background:#180d1f}
+body[data-issue="02"] .single-issue:after{transform:rotate(-4deg);border-color:#85424c40}
+body[data-issue="02"] .issue-panel{grid-column:2;grid-row:1;justify-self:start;max-width:380px;padding:32px;background:linear-gradient(135deg,#281326a0,#100a14cc);border-radius:4px;border-color:#c7877145;position:relative}
+body[data-issue="02"] .issue-panel:before{content:'✦';position:absolute;top:-11px;left:calc(50% - 10px);background:var(--bg);color:#dc8c67;padding:0 8px}
+body[data-issue="02"] .panel-label{font-size:9px;color:#d6a18d}
+body[data-issue="02"] .issue-number{font-family:var(--gothic);font-size:70px}
+body[data-issue="02"] .issue-volume strong{font-size:12px}
+body[data-issue="02"] .issue-panel h2{font-family:var(--gothic);font-weight:700;font-size:29px;line-height:1.3}
+body[data-issue="02"] .issue-panel p{font-size:13px;line-height:1.9;margin-block:16px 25px}
+body[data-issue="02"] .primary-btn{border-radius:40px;height:48px;font-size:11px;background:linear-gradient(110deg,#ffab5c,#ff7837);box-shadow:0 0 24px #ff661220}
+body[data-issue="02"] .secondary-btn{border-radius:40px;height:45px;font-size:10px;margin-top:12px}
+body[data-issue="02"] .theme-meta{margin-top:25px;padding-top:20px}
+body[data-issue="02"] .theme-meta strong{font-family:var(--gothic);font-size:13px}
+body[data-issue="02"] .target{border:none;width:34px;height:30px;background:#f78328;border-radius:45%;box-shadow:0 0 18px #f7832835}
+body[data-issue="02"] .target:before{content:'';position:absolute;width:5px;height:7px;background:#824e31;left:15px;top:-5px;transform:rotate(15deg)}
+body[data-issue="02"] .target:after{inset:8px 6px 7px;border:none;border-radius:0;background:#27101a;clip-path:polygon(0 36%,25% 0,35% 38%,65% 38%,75% 0,100% 36%,100% 46%,84% 46%,74% 100%,26% 100%,16% 46%,0 46%)}
+body[data-issue="02"] .cover-caption{font-size:10px;margin-top:26px}
+body[data-issue="02"] .archive{padding-bottom:60px}
+body[data-issue="02"] .section-heading{font-family:var(--gothic);font-size:19px;padding-block:22px}
+body[data-issue="02"] .archive-card{border-radius:4px;padding:18px 20px;min-height:110px;background:linear-gradient(130deg,#25112355,#110b17)}
+body[data-issue="02"] .archive-card.selected{border-color:#d2875c9c;background:linear-gradient(130deg,#45203370,#24101a)}
+body[data-issue="02"] .archive-card img{width:40px;height:59px}
+body[data-issue="02"] .archive-copy small{font-size:8px}
+body[data-issue="02"] .archive-copy strong{font:400 14px/1.5 Georgia,serif}
+body[data-issue="02"] .archive-copy span{font-size:8px}
+.hub-footer{display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-block:27px 32px;color:var(--muted);font-size:8px;letter-spacing:.07em}
+.footer-brand{font-size:18px;font-weight:600;color:var(--accent)}.footer-brand span{font:400 14px Georgia,serif;margin-left:10px;color:var(--text)}
+.footer-motto{font:italic 20px Georgia,serif;color:#cf9ab4}body[data-issue="01"] .footer-motto{display:none}
+@keyframes mist-drift{from{transform:translateX(-5%)}to{transform:translateX(8%)}}
+@media(min-width:1600px){.night-art{background-position:center 47%}.night-content{padding-top:100px;padding-bottom:140px}}
+@media(max-width:1100px){body[data-issue="02"] .hero{gap:40px}.night-art{background-position:59% center}.halloween-word{font-size:clamp(80px,11vw,125px)}.happy-word{font-size:50px}.night-content{padding-top:80px}.night-vignette{background:linear-gradient(90deg,#0b0610df,#0b06109a 40%,#0b061000 90%),linear-gradient(0deg,#0b0610,transparent 22%)}body[data-issue="02"] .halloween-divider{gap:20px;font-size:8px}}
+@media(max-width:680px){.issue-switcher{flex-direction:column;gap:12px;padding-block:16px}.switcher-label{font-size:7px;letter-spacing:.13em}.issue-switcher .volume-tab{min-width:137px;padding:7px 14px}body[data-issue="02"] .halloween-hero{min-height:700px}.night-art{background-position:67% top;background-size:auto 100%}.night-vignette{background:linear-gradient(0deg,#0b0610 0%,#0b061020 44%,#0b0610a3 70%,#0b0610bc 100%),linear-gradient(90deg,#0b06106b,transparent)}.night-content{padding-top:36px;padding-bottom:320px}.night-eyebrow{font-size:7px;gap:8px;letter-spacing:.2em;margin-bottom:20px}.happy-word{font-size:35px}.halloween-word{font-size:clamp(65px,17vw,110px)}.night-subtitle{font-size:23px;margin-top:18px}.night-thai{font-size:13px;color:#dac4da}.night-actions{gap:14px;flex-wrap:wrap;margin-top:22px}.night-enter{font-size:11px;padding:12px 20px;gap:20px}.night-edition{font-size:7px}.night-bottom{font-size:6px;letter-spacing:.13em;bottom:18px}body[data-issue="02"] .halloween-divider{gap:12px;padding-block:16px;font-size:7px;flex-wrap:wrap}.halloween-divider span:last-child,.halloween-divider i:nth-last-child(2){display:none}body[data-issue="02"] .reading-heading{padding-top:45px}.reading-heading h2{font-size:35px}.reading-heading>span{font-size:11px}.reading-heading>p{font-size:8px}body[data-issue="02"] .hero{display:flex;gap:38px;padding:35px 0 48px}body[data-issue="02"] .single-issue{width:min(80vw,390px)}body[data-issue="02"] .issue-panel{max-width:100%;padding:27px}body[data-issue="02"] .archive{padding-bottom:35px}body[data-issue="02"] .archive-grid{gap:12px}body[data-issue="02"] .archive-card{min-height:100px}.hub-footer{flex-direction:column;align-items:flex-start;gap:17px}.footer-motto{font-size:20px}}
+@media(prefers-reduced-motion:reduce){.night-mist{animation:none}}
+/* Contain decorative light without creating horizontal scrolling. */
+body[data-issue="02"] .site{overflow:clip}

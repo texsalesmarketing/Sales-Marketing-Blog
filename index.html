@@ -8,8 +8,9 @@
   <title>TEX Marketing Hub</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif+Ethiopic:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=8.1">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Cinzel+Decorative:wght@400;700;900&family=Inter:wght@400;500;600&family=Noto+Sans+Thai:wght@400;500&family=Noto+Serif+Ethiopic:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=9.0">
+  <link rel="stylesheet" href="css/halloween.css?v=9.0">
   <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6JH8XJGQFT"></script>
 <script>
@@ -21,7 +22,7 @@
 </script>
 </head>
 <body data-issue="02">
-  <a class="skip-link" href="#hero-title">Skip to content</a>
+  <a class="skip-link" href="#current-issue">Skip to content</a>
   <main class="site" id="home">
     <div class="season-decoration" aria-hidden="true">
       <svg class="corner-web" viewBox="0 0 200 200" fill="none"><g stroke="currentColor" stroke-width="1"><path d="M0 0L195 20M0 0L180 85M0 0L140 145M0 0L78 185M0 0L15 200"/><path d="M39 4Q29 14 36 17Q23 26 28 29Q14 32 16 37Q4 34 3 40M78 8Q62 29 72 34Q48 49 56 58Q29 61 31 74Q8 68 6 80M117 12Q93 43 108 51Q74 73 84 87Q44 92 47 111Q14 103 9 120M156 16Q124 59 144 68Q99 97 112 116Q59 124 62 148Q19 141 12 160"/></g></svg>
@@ -43,16 +44,41 @@
       </div>
     </header>
 
-    <div class="desktop-frame">
-      <p class="sr-only" id="issue-status" role="status" aria-live="polite"></p>
-      <section class="hero shell" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <div class="eyebrow"><span>TEX Internal Communication</span><i aria-hidden="true"></i></div>
-          <h1 id="hero-title">Marketing<br>Hub<span class="title-dot">.</span></h1>
-          <div class="volume-picker" role="group" aria-label="เลือกฉบับ Newsletter">
+
+    <div class="issue-switcher shell">
+      <span class="switcher-label">THE TEX CHRONICLES <span aria-hidden="true">/</span> CHOOSE YOUR CHAPTER</span>
+                <div class="volume-picker" role="group" aria-label="เลือกฉบับ Newsletter">
             <button type="button" class="volume-tab" data-select-issue="01" aria-pressed="false"><span>VOL. 01</span><small>Doomsday</small></button>
             <button type="button" class="volume-tab selected" data-select-issue="02" aria-pressed="true"><span>VOL. 02 <i>NEW</i></span><small>Halloween</small></button>
           </div>
+
+    </div>
+    <section class="halloween-hero" aria-labelledby="halloween-title">
+      <div class="night-art" aria-hidden="true"></div>
+      <div class="night-vignette" aria-hidden="true"></div>
+      <div class="night-grain" aria-hidden="true"></div>
+      <div class="night-mist" aria-hidden="true"></div>
+      <div class="shell night-content">
+        <p class="night-eyebrow"><span></span> DARK NIGHTS. BRIGHTER IDEAS.</p>
+        <h1 id="halloween-title"><span class="happy-word">Happy</span><span class="halloween-word">Halloween</span></h1>
+        <p class="night-subtitle">A little fright.<br>A whole lot of market insight.</p>
+        <p class="night-thai" lang="th">หลอนแค่ลุค… แต่บุกทุกตลาด!</p>
+        <div class="night-actions">
+          <a class="night-enter" href="#current-issue">Explore Volume 02 <span aria-hidden="true">↗</span></a>
+          <span class="night-edition">OCTOBER 2026 <i></i> VOL. 02</span>
+        </div>
+      </div>
+      <div class="night-bottom shell"><span>THE HALLOWEEN EDITION</span><a href="#current-issue">SCROLL TO DISCOVER <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <div class="halloween-divider" aria-hidden="true"><span>MARKET THRILLS</span><i>✦</i><span>TEAM SPIRIT</span><i>✦</i><span>TRICK OR TREAT</span><i>✦</i><span>FRESH PERSPECTIVES</span></div>
+    <div class="reading-heading shell"><p>UNSEAL THE LATEST CHAPTER</p><h2>Spooky stories.<br><em>Serious insights.</em></h2><span>Your October dispatch from the TEX Marketing Team.</span></div>
+
+    <div class="desktop-frame">
+      <p class="sr-only" id="issue-status" role="status" aria-live="polite"></p>
+      <section class="hero shell" id="current-issue" aria-label="Current newsletter">
+        <div class="hero-copy">
+          <div class="eyebrow"><span>TEX Internal Communication</span><i aria-hidden="true"></i></div>
+          <h1 id="hero-title">Marketing<br>Hub<span class="title-dot">.</span></h1>
           <div class="edition-row"><span id="edition-volume">Volume 02 · October 2026</span><i aria-hidden="true"></i></div>
           <div class="edition-name" id="edition-name">Halloween Edition</div>
           <p class="hero-description">Market updates &amp; stories from our team.</p><p class="edition-tagline" id="edition-tagline">หลอนแค่ลุค… แต่บุกทุกตลาด!</p><div class="season-mark" aria-hidden="true">✦ <span>TRICK OR TREAT</span> ✦</div>
@@ -118,6 +144,7 @@
         </div>
       </section>
     </div>
+    <footer class="hub-footer shell"><a class="footer-brand" href="#home">TEX <span>Marketing Hub</span></a><span class="footer-motto">Good people. Spooky times.</span><span>THAI ETHOXYLATE · INTERNAL NEWSLETTER</span></footer>
   </main>
 
   <div class="viewer" id="viewer" tabindex="-1" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Marketing News viewer">
@@ -135,6 +162,6 @@
     <div class="canvas" id="canvas"><div class="loading" id="loading"><span></span>Loading original image</div><img class="newsletter" id="newsletter" alt="" draggable="false"></div>
     <div class="viewer-tip">Scroll or pinch to zoom · Drag to move · ESC to close</div>
   </div>
-  <script src="js/app.js?v=8.1" defer></script>
+  <script src="js/app.js?v=9.0" defer></script>
 </body>
 </html>

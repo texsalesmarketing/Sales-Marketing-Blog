@@ -294,6 +294,9 @@ function applyIssue(volume) {
   const issue = issues[volume];
   if (!issue) return;
   document.body.dataset.issue = volume;
+  document.querySelector('.halloween-hero').hidden = volume !== '02';
+  document.querySelector('.hero-copy').hidden = volume === '02';
+  document.querySelector('meta[name="theme-color"]').content = volume === '02' ? '#0b0610' : '#080d0d';
   document.getElementById("edition-volume").textContent = `Volume ${volume} · ${issue.date}`;
   document.getElementById("edition-name").textContent = issue.name;
   document.getElementById("edition-tagline").textContent = issue.tagline;
@@ -350,6 +353,7 @@ document.querySelectorAll(".archive-card[data-issue]").forEach(card => {
 document.querySelectorAll(".volume-tab").forEach(tab => {
   tab.addEventListener("click", () => selectIssue(tab.dataset.selectIssue));
 });
+applyIssue("02");
 const requestedVolume = new URLSearchParams(location.search).get("view");
 if (requestedVolume === "vol01" || requestedVolume === "vol02") {
   applyIssue(requestedVolume.slice(-2));
