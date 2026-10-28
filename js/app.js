@@ -294,7 +294,7 @@ function applyIssue(volume){
   document.querySelector('.edition-stage').hidden=volume!=='02';
   document.querySelector('.legacy-layout').hidden=volume!=='01';
   document.querySelector('meta[name="theme-color"]').content=issues[volume].color;
-  document.title=`TEX Marketing Hub — ${issues[volume].name}`;
+  document.title=volume==='02'?'HALLOWEEN TEX — Marketing Hub':`TEX Marketing Hub — ${issues[volume].name}`;
   document.querySelectorAll('[data-select-issue]').forEach(button=>{
     const selected=button.dataset.selectIssue===volume;
     button.classList.toggle('selected',selected);
